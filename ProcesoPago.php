@@ -195,11 +195,11 @@
 
 	
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script type="text/javascript" src="https://conektaapi.s3.amazonaws.com/v0.5.0/js/conekta.js"></script>
         
 		<script type="text/javascript">
-		  Conekta.setPublishableKey('key_OsNefLXpsxPCUxWy5bjM65A'); //v3.2
-        </script>
+		//Como aquí no se tokeniza, no es necesario añadir la librería.
++		  //Conekta.setPublishableKey('key_OsNefLXpsxPCUxWy5bjM65A'); //v3.2
+	        </script>
     
     </head>
     
