@@ -71,7 +71,7 @@
         
 		<script type="text/javascript">
              // Conekta Public Key
-		  Conekta.setPublishableKey('key_OsNefLXpsxPCUxWy5bjM65A'); //v3.2
+		   Conekta.setPublicKey('key_OsNefLXpsxPCUxWy5bjM65A'); //v0.5
         </script>
     
     </head>
@@ -692,7 +692,7 @@ $totalDecimal = number_format ($totalpagar, 2, '.', '');
                     $form = $("#card-form");
 
                     /* Inserta el token_id en la forma para que se envíe al servidor */
-                    $form.append($("<input type=\"hidden\" name=\"conektaTokenId\" />").val(token.id));
+                    $form.append($("<input type=\"hidden\" name=\"conektaTokenId\" id=\"conektaTokenId\" />").val(token.id));
 
                     /* and submit */
                     $form.get(0).submit();
