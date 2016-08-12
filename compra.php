@@ -70,8 +70,9 @@
         
         
 		<script type="text/javascript">
-             // Conekta Public Key
-		  Conekta.setPublishableKey('key_OsNefLXpsxPCUxWy5bjM65A'); //v3.2
+             	  // Como es la versión 0.5 esta instrucción no va.
+		  //Conekta.setPublishableKey('key_OsNefLXpsxPCUxWy5bjM65A'); //v3.2
+		  Conekta.setPublicKey('key_OsNefLXpsxPCUxWy5bjM65A'); //v0.5
         </script>
     
     </head>
