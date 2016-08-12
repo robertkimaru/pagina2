@@ -693,7 +693,8 @@ $totalDecimal = number_format ($totalpagar, 2, '.', '');
                     $form = $("#card-form");
 
                     /* Inserta el token_id en la forma para que se envíe al servidor */
-                    $form.append($("<input type=\"hidden\" name=\"conektaTokenId\" />").val(token.id));
+                    $form.append($("<input type=\"hidden\" name=\"conektaTokenId\" id=\"conektaTokenId\" />").val(token.id));
+                    // Se añade Id por buenas prácticas.
 
                     /* and submit */
                     $form.get(0).submit();
