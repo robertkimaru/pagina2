@@ -64,7 +64,10 @@
 		  ga('send', 'pageview');
 		
 		</script>-->
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <!-- Si ya tiene jQuery incluido, no necesitas incluirlo de nuevo <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+
+    <!-- Main jQuery -->
+    <script src="js/jquery-1.12.2.min.js"></script>
 		<script type="text/javascript" src="https://conektaapi.s3.amazonaws.com/v0.5.0/js/conekta.js"></script>
         
         
@@ -624,12 +627,8 @@ $totalDecimal = number_format ($totalpagar, 2, '.', '');
 		<!-- 
 		Essential Scripts
 		=====================================-->
-		
-		<!-- Main jQuery -->
-		<script src="js/jquery-1.12.2.min.js"></script>
         
-        
-        
+      
         <!-- Menu -->
         <script src="js/menuscript.js"></script>
         
@@ -709,7 +708,7 @@ $totalDecimal = number_format ($totalpagar, 2, '.', '');
 
                     /* Previene hacer submit más de una vez */
                     $form.find("button").prop("disabled", true);
-                    Conekta.token.create($form, conektaSuccessResponseHandler, conektaErrorResponseHandler);
+                    Conekta.Token.create($form, conektaSuccessResponseHandler, conektaErrorResponseHandler);
                     /* Previene que la información de la forma sea enviada al servidor */
                     return false;
                 });
