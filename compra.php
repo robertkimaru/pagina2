@@ -64,7 +64,10 @@
 		  ga('send', 'pageview');
 		
 		</script>-->
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <!-- Si ya tiene jQuery incluido, no necesitas incluirlo de nuevo <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+    
+    <!-- Main jQuery -->
+    <script src="js/jquery-1.12.2.min.js"></script>
 		<script type="text/javascript" src="https://conektaapi.s3.amazonaws.com/v0.5.0/js/conekta.js"></script>
         
         
@@ -624,12 +627,8 @@ $totalDecimal = number_format ($totalpagar, 2, '.', '');
 		<!-- 
 		Essential Scripts
 		=====================================-->
-		
-		<!-- Main jQuery -->
-		<script src="js/jquery-1.12.2.min.js"></script>
         
-        
-        
+      
         <!-- Menu -->
         <script src="js/menuscript.js"></script>
         
